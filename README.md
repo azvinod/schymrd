@@ -29,7 +29,7 @@ Explore a single feature (gene, metadata, etc.) and its relation to variations o
 - The third plot is the harmony/PCA/UMAP that is colored based on the Identity selection. 
 
 ---
-### Double Marker View:
+### Multiple Marker View:
 Explore two features (gene, metadata, etc.) and its relation to variations of clustering or on a per sample basis. 
 
 #### Options: All of the options here are the same as the Single Marker View with the following field as an option.
