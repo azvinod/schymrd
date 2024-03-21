@@ -71,6 +71,6 @@ what the real cell groups are in your samples.
 
 ![](.README_images/cluster_tree.png)
 ---    
-Having trouble understanding what a PCA vs UMAP plot represents?
+
 
 
