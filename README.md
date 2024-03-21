@@ -14,8 +14,8 @@ Explore a single feature (gene, metadata, etc.) and its relation to variations o
         - percent mitochondria expression for each cell’s expression (percent.mito)
         - number of total unique genes or ‘features’ expressed (nFeature_RNA)
         - Total number of genes expressed or total count of RNA (nCount_RNA)
-    - PCs: Are you interested in exploring the principal components that contribute to the tSNE plot seen?
-- Reduction Type: [PCA, TSNE, UMAP]
+    - PCs: Are you interested in exploring the principal components that contribute to the harmony plot seen?
+- Reduction Type: [PCA, harmony, UMAP]
 - Identity: 
     - Orig.ident: This will color the graph based on the names of the samples processed. 
     - RNA_snn_res.0.XX: This will color the graph based on groupings produced by Seurat as various resolutions.
@@ -24,9 +24,9 @@ Explore a single feature (gene, metadata, etc.) and its relation to variations o
 - Primary Numeric: This will change to be Genes, Numeric Metadata, or PCs based on the value selected for ‘Numeric Analysis Type’.
 
 #### Graphs:
-- The first plot is a tSNE/PCA/UMAP that is colored based on the Primary Numeric selection. 
+- The first plot is a harmony/PCA/UMAP that is colored based on the Primary Numeric selection. 
 - The second plot is a violin plot that displays the Identity selection on the X-axis and the Primary Numeric on the Y-axis. 
-- The third plot is the tSNE/PCA/UMAP that is colored based on the Identity selection. 
+- The third plot is the harmony/PCA/UMAP that is colored based on the Identity selection. 
 
 ---
 ### Double Marker View:
@@ -39,10 +39,10 @@ Explore two features (gene, metadata, etc.) and its relation to variations of cl
 Numeric Metadata, or PCs based on the value selected for ‘Numeric Analysis Type’.
 
 #### Graphs:
-- The first plot is a tSNE that is colored based on the Primary Numeric and Secondary Numeric selection. 
+- The first plot is a harmony that is colored based on the Primary Numeric and Secondary Numeric selection. 
 - The second plot’s first tile is a violin plot that displays the Identity selection on the X-axis and the Primary
 Numeric on the Y-axis. The second plot’s second tile is the same as the first tile but is based on the selection of the Secondary Numeric field. 
-- The third plot is the tSNE that is colored based on the Identity selection. 
+- The third plot is the harmony that is colored based on the Identity selection. 
 
 ---
 ### Marker Set (Grid)
@@ -71,10 +71,6 @@ what the real cell groups are in your samples.
 
 ![](.README_images/cluster_tree.png)
 ---    
-Having trouble understanding what a tSNE vs UMAP plot represents?
-- However, note that in our workflow we don't cluster on the TSNE or UMAP coordinates, 
-we cluster on the principal components and then use TSNE or UMAP for display, 
-so the difference is purely visual. 
-- tSNE helpful video: https://www.youtube.com/watch?v=NEaUSP4YerM
-- UMPA vs TSNE: https://towardsdatascience.com/tsne-vs-umap-global-structure-4d8045acba17
+Having trouble understanding what a PCA vs UMAP plot represents?
+
 
