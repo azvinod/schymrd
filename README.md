@@ -70,7 +70,8 @@ This plot helps to identify closest related clusters so when moving into the fin
 what the real cell groups are in your samples. 
 
 ![](.README_images/cluster_tree.png)
----    
+---   
+### Modules
 ###### Documentation
 ###### Single Marker
 ###### Multiple Marker
