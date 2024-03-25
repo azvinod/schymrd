@@ -1,7 +1,6 @@
 # schymrd
 mouse_and_rat_hypertension-dataset-explorer
 ---
-Shiny App Tutorial
 
 ### Single Marker View:
 Explore a single feature (gene, metadata, etc.) and its relation to variations of clustering or on a per sample basis. 
