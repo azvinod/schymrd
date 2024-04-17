@@ -7,7 +7,7 @@ Explore a single feature (gene, metadata, etc.) and its relation to variations o
 
 #### Options: 
 ![](.README_images/single_marker.png)
-- Fature: [Genes, Numeric Metadata, PCs]
+- Feature: [Genes, Numeric Metadata, PCs]
     - Genes: Are you interested in looking at genes or interest such as marker genes?
     - Numeric Metadata: Are you interested in looking at metadata features such as: 
         - percent mitochondria expression for each cell’s expression (percent.mito)
@@ -20,11 +20,11 @@ Explore a single feature (gene, metadata, etc.) and its relation to variations o
     - RNA_snn_res.0.XX: This will color the graph based on groupings produced by Seurat as various resolutions.
         - A higher value of XX means that there is a higher resolution, and therefore more clusters or inferred groups of cell types. 
         - A lower value of XX means that there is a 
-- Primary Numeric: This will change to be Genes, Numeric Metadata, or PCs based on the value selected for ‘Fature’.
+- Primary Feature: This will change to be Genes, Numeric Metadata, or PCs based on the value selected for ‘Feature’.
 
 #### Graphs:
-- The first plot is a harmony/PCA/UMAP that is colored based on the Primary Numeric selection. 
-- The second plot is a violin plot that displays the Identity selection on the X-axis and the Primary Numeric on the Y-axis. 
+- The first plot is a harmony/PCA/UMAP that is colored based on the Primary Feature selection. 
+- The second plot is a violin plot that displays the Identity selection on the X-axis and the Primary Feature on the Y-axis. 
 - The third plot is the harmony/PCA/UMAP that is colored based on the Identity selection. 
 
 ---
@@ -34,13 +34,13 @@ Explore two features (gene, metadata, etc.) and its relation to variations of cl
 #### Options: All of the options here are the same as the Single Marker View with the following field as an option.
 ![](.README_images/double_marker.png)
 
-- Secondary Numeric: This, in combination with the Primary Numeric field enables a user to explore two Genes, 
-Numeric Metadata, or PCs based on the value selected for ‘Fature’.
+- Secondary Feature: This, in combination with the Primary Feature field enables a user to explore two Genes, 
+Numeric Metadata, or PCs based on the value selected for ‘Feature’.
 
 #### Graphs:
-- The first plot is a harmony that is colored based on the Primary Numeric and Secondary Numeric selection. 
+- The first plot is a harmony that is colored based on the Primary Feature and Secondary Feature selection. 
 - The second plot’s first tile is a violin plot that displays the Identity selection on the X-axis and the Primary
-Numeric on the Y-axis. The second plot’s second tile is the same as the first tile but is based on the selection of the Secondary Numeric field. 
+Numeric on the Y-axis. The second plot’s second tile is the same as the first tile but is based on the selection of the Secondary Feature field. 
 - The third plot is the harmony that is colored based on the Identity selection. 
 
 ---
@@ -54,7 +54,7 @@ This plot helps to explore sets of genes and their relation to the identity.
 
 #### Graph:
 - Y-axis represents the Identity, such as the original samples or some groupings at a certain resolution.
-- X-axis represents the genes selected. (Primary Numeric) 
+- X-axis represents the genes selected. (Primary Feature) 
 - The size of each dot on the grid represents the percentage of cells that expressed that gene. 
 - The color intensity of each dot on the grid represents the average expression of the cells that expressed a given gene. 
 - So what makes for a good marker gene for some given identity?
