@@ -4,48 +4,44 @@ mouse_and_rat_hypertension-dataset-explorer
 
 ### Single Marker View:
 Explore a single feature (gene, metadata, etc.) and its relation to variations of clustering or on a per sample basis. 
+User can select desired dataset based on tissue type, species and condition. User can select Identity i.e. desired treatment, cell type class levels. 
 
 #### Options: 
 ![](.README_images/single_marker.png)
-- Feature: [Genes, Numeric Metadata, PCs]
-    - Genes: Are you interested in looking at genes or interest such as marker genes?
-    - Numeric Metadata: Are you interested in looking at metadata features such as: 
-        - percent mitochondria expression for each cell’s expression (percent.mito)
-        - number of total unique genes or ‘features’ expressed (nFeature_RNA)
-        - Total number of genes expressed or total count of RNA (nCount_RNA)
-    - PCs: Are you interested in exploring the principal components that contribute to the harmony plot seen?
+- Feature: [Genes]
+    - Genes: Are you interested in looking at marker genes?
+
 - Reduction Type: [PCA, harmony, UMAP]
 - Identity: 
     - Orig.ident: This will color the graph based on the names of the samples processed. 
     - RNA_snn_res.0.XX: This will color the graph based on groupings produced by Seurat as various resolutions.
         - A higher value of XX means that there is a higher resolution, and therefore more clusters or inferred groups of cell types. 
         - A lower value of XX means that there is a 
-- Primary Feature: This will change to be Genes, Numeric Metadata, or PCs based on the value selected for ‘Feature’.
+- Primary Feature: This will change to be Genes, based on the value selected for ‘Feature’.
 
 #### Graphs:
-- The first plot is a harmony/PCA/UMAP that is colored based on the Primary Feature selection. 
+- The first plot is a UMAP that is colored based on the Primary Feature selection. 
 - The second plot is a violin plot that displays the Identity selection on the X-axis and the Primary Feature on the Y-axis. 
 - The third plot is the harmony/PCA/UMAP that is colored based on the Identity selection. 
 
 ---
 ### Multiple Marker View:
-Explore two features (gene, metadata, etc.) and its relation to variations of clustering or on a per sample basis. 
+Explore two features (genes) and its relation to variations of clustering or on a per sample basis. 
 
 #### Options: All of the options here are the same as the Single Marker View with the following field as an option.
 ![](.README_images/double_marker.png)
 
-- Secondary Feature: This, in combination with the Primary Feature field enables a user to explore two Genes, 
-Numeric Metadata, or PCs based on the value selected for ‘Feature’.
+- Secondary Feature: This, in combination with the Primary Feature field enables a user to explore two Genes, based on the value selected for ‘Feature’.
 
 #### Graphs:
-- The first plot is a harmony that is colored based on the Primary Feature and Secondary Feature selection. 
+- The first plot is a UMAP that is colored based on the Primary Feature and Secondary Feature selection. 
 - The second plot’s first tile is a violin plot that displays the Identity selection on the X-axis and the Primary
 Numeric on the Y-axis. The second plot’s second tile is the same as the first tile but is based on the selection of the Secondary Feature field. 
-- The third plot is the harmony that is colored based on the Identity selection. 
+- The third plot is the UMAP that is colored based on the Identity selection. 
 
 ---
 ### Marker Set (Grid)
-This plot helps to explore sets of genes and their relation to the identity. 
+This plot helps to explore sets of genes and their relation to the identity. Major Identities include  
 
 #### Options:
 ![](.README_images/marker_set.png)
