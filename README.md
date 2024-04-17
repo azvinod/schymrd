@@ -7,7 +7,7 @@ Explore a single feature (gene, metadata, etc.) and its relation to variations o
 
 #### Options: 
 ![](.README_images/single_marker.png)
-- Numeric Analysis Type: [Genes, Numeric Metadata, PCs]
+- Fature: [Genes, Numeric Metadata, PCs]
     - Genes: Are you interested in looking at genes or interest such as marker genes?
     - Numeric Metadata: Are you interested in looking at metadata features such as: 
         - percent mitochondria expression for each cell’s expression (percent.mito)
@@ -20,7 +20,7 @@ Explore a single feature (gene, metadata, etc.) and its relation to variations o
     - RNA_snn_res.0.XX: This will color the graph based on groupings produced by Seurat as various resolutions.
         - A higher value of XX means that there is a higher resolution, and therefore more clusters or inferred groups of cell types. 
         - A lower value of XX means that there is a 
-- Primary Numeric: This will change to be Genes, Numeric Metadata, or PCs based on the value selected for ‘Numeric Analysis Type’.
+- Primary Numeric: This will change to be Genes, Numeric Metadata, or PCs based on the value selected for ‘Fature’.
 
 #### Graphs:
 - The first plot is a harmony/PCA/UMAP that is colored based on the Primary Numeric selection. 
@@ -35,7 +35,7 @@ Explore two features (gene, metadata, etc.) and its relation to variations of cl
 ![](.README_images/double_marker.png)
 
 - Secondary Numeric: This, in combination with the Primary Numeric field enables a user to explore two Genes, 
-Numeric Metadata, or PCs based on the value selected for ‘Numeric Analysis Type’.
+Numeric Metadata, or PCs based on the value selected for ‘Fature’.
 
 #### Graphs:
 - The first plot is a harmony that is colored based on the Primary Numeric and Secondary Numeric selection. 
